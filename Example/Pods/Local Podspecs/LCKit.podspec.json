@@ -16,13 +16,6 @@
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "LCKit": [
-      "Pod/Assets/*.png"
-    ]
-  },
-  "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": [
     "UIKit",
     "MapKit",
@@ -33,5 +26,12 @@
     "AFNetworking": [
       "~> 2.3"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "CommonTools",
+      "source_files": "Pod/Classes/CommonTools/**/*",
+      "public_header_files": "Pod/Classes/CommonTools/**/*.h"
+    }
+  ]
 }

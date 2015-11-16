@@ -27,6 +27,9 @@ PODS:
     - FBSnapshotTestCase/Core
   - LCKit (0.1.0):
     - AFNetworking (~> 2.3)
+    - LCKit/CommonTools (= 0.1.0)
+  - LCKit/CommonTools (0.1.0):
+    - AFNetworking (~> 2.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -39,6 +42,6 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  LCKit: 9f9f8ef191f024116a4f5f2f7b3cb7d5f8485b4a
+  LCKit: b9226563dd2392c99726e3600ac47f6f23cfc3b6
 
 COCOAPODS: 0.39.0
