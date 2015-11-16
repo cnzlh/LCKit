@@ -29,19 +29,18 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
+  s.default_subspec = 'CommonTools'
 
-#  s.source_files = 'Pod/Classes/**/*'
-#
-#  s.resource_bundles = {
-#    'LCKit' => ['Pod/Assets/*.png']
-#  }
-#  s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.source_files = 'Pod/Classes/**/*'
+  #s.resource_bundles = {
+  #  'LCKit' => ['Pod/Assets/*.png']
+  #}
+  #s.public_header_files = 'Pod/Classes/**/*.h'
 
   s.subspec 'CommonTools' do |commonTools|
-      commonTools.source_files = 'Pod/Classes/CommonTools/**/*'
-      commonTools.public_header_files = 'Pod/Classes/CommonTools/**/*.h'
+    commonTools.source_files = 'Pod/Classes/CommonTools/**/*'
+    commonTools.public_header_files = 'Pod/Classes/CommonTools/**/*.h'
   end
-
   
   
   s.frameworks = 'UIKit', 'MapKit', 'Foundation', 'CoreGraphics'
