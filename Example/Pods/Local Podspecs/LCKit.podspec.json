@@ -16,6 +16,7 @@
     "ios": "7.0"
   },
   "requires_arc": true,
+  "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": [
     "UIKit",
     "MapKit",
