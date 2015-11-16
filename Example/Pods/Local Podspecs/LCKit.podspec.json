@@ -1,6 +1,6 @@
 {
   "name": "LCKit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "Common methods for iOS.",
   "description": "It is common methods used on iOS, which implement by Objective-C.",
   "homepage": "https://github.com/cnzlh/LCKit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/cnzlh/LCKit.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "7.0"
