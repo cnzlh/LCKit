@@ -1,0 +1,25 @@
+{
+  "name": "LCKit",
+  "version": "0.1.0",
+  "summary": "A short description of LCKit.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LCKit",
+  "license": "MIT",
+  "authors": {
+    "linhua": "cnzlh@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LCKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LCKit": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

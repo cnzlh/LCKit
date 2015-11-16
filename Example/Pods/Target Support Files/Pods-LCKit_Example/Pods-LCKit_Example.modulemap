@@ -1,0 +1,6 @@
+framework module Pods_LCKit_Example {
+  umbrella header "Pods-LCKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
