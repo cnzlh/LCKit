@@ -9,6 +9,7 @@
 #import "UITableView+LCExtension.h"
 #import "UIView+LCExtension.h"
 #import "LCCommon.h"
+#import "LCCommonTools.h"
 #import "LCLocationConverter.h"
 #import "Macro.h"
 #import "NSString+RegEx.h"
