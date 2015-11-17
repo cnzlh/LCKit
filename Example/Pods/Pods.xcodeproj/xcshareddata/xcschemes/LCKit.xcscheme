@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5A8AD6F73C450CED1DBD090E'
+               BlueprintIdentifier = 'E59BAA92BB99ACBDF784B7AF'
                BlueprintName = 'LCKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'LCKit.framework'>
