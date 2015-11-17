@@ -16,23 +16,27 @@
     "ios": "7.0"
   },
   "requires_arc": true,
-  "default_subspecs": "CommonTools",
   "frameworks": [
     "UIKit",
     "MapKit",
     "Foundation",
     "CoreGraphics"
   ],
-  "dependencies": {
-    "AFNetworking": [
-      "~> 2.3"
-    ]
-  },
   "subspecs": [
     {
       "name": "CommonTools",
       "source_files": "Pod/Classes/CommonTools/**/*",
       "public_header_files": "Pod/Classes/CommonTools/**/*.h"
+    },
+    {
+      "name": "NetworkEngine",
+      "source_files": "Pod/Classes/NetworkEngine/**/*",
+      "public_header_files": "Pod/Classes/NetworkEngine/**/*.h",
+      "dependencies": {
+        "AFNetworking": [
+          "~> 2.3"
+        ]
+      }
     }
   ]
 }

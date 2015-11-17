@@ -13,6 +13,7 @@
 #import "LCLocationConverter.h"
 #import "Macro.h"
 #import "NSString+RegEx.h"
+#import "LCNetworkEngine.h"
 
 FOUNDATION_EXPORT double LCKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char LCKitVersionString[];
