@@ -42,11 +42,11 @@ Pod::Spec.new do |s|
     commonTools.public_header_files = 'Pod/Classes/CommonTools/**/*.h'
   end
   
-  s.subspec 'NetworkEngine' do |networkEngine|
-      networkEngine.source_files = 'Pod/Classes/NetworkEngine/**/*'
-      networkEngine.public_header_files = 'Pod/Classes/NetworkEngine/**/*.h'
-      networkEngine.dependency 'AFNetworking', '~> 2.3'
-  end
+#  s.subspec 'NetworkEngine' do |networkEngine|
+#      networkEngine.source_files = 'Pod/Classes/NetworkEngine/**/*'
+#      networkEngine.public_header_files = 'Pod/Classes/NetworkEngine/**/*.h'
+#      networkEngine.dependency 'AFNetworking', '~> 2.3'
+#  end
   
   s.frameworks = 'UIKit', 'MapKit', 'Foundation', 'CoreGraphics'
 # s.dependency 'AFNetworking', '~> 2.3'

@@ -71,5 +71,9 @@
     
 }
 
+- (void)pushViewController:(UIViewController *)viewController inViewController:(UIViewController *)inController animated:(BOOL)animated backButtonTitle:(NSString *)title {
+    inController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
+    [inController.navigationController pushViewController:viewController animated:animated];
+}
 
 @end

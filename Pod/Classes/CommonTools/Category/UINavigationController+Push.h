@@ -26,4 +26,6 @@ typedef enum{
 
 - (void)popInViewController:(UIViewController *)controller fromDirection:(TransitionDirection)direction;
 
+- (void)pushViewController:(UIViewController *)viewController inViewController:(UIViewController *)inController  animated:(BOOL)animated backButtonTitle:(NSString *)title;
+
 @end
