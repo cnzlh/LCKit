@@ -17,7 +17,7 @@ LCKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "LCKit"
+pod 'LCKit/CommonTools', :git => 'https://github.com/cnzlh/LCKit.git'
 ```
 
 ## Author
@@ -27,3 +27,5 @@ linhua, cnzlh@163.com
 ## License
 
 LCKit is available under the MIT license. See the LICENSE file for more info.
+
+
