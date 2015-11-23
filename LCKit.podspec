@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/cnzlh/LCKit"
   s.license          = 'MIT'
   s.author           = { "linhua" => "cnzlh@163.com" }
-  s.source           = { :git => "https://github.com/cnzlh/LCKit.git", :tag => s.version, :submodules => true }
+  s.source           = { :git => "https://github.com/cnzlh/LCKit.git", :tag => s.version.to_s, :submodules => true }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
