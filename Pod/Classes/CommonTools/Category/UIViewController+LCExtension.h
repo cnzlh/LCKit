@@ -10,5 +10,9 @@
 
 @interface UIViewController (LCExtension)
 
+/**
+ *  消除键盘
+ */
+- (void)resignKeyBoardInView:(UIView *)view;
 
 @end
