@@ -27,20 +27,6 @@
             }
         }
     }
-    else {
-        //ios7上UITableViewCell子层容器是UITableViewCellScrollView
-        for (id obj in self.subviews)
-        {
-            if ([NSStringFromClass([obj class]) isEqualToString:@"UITableViewCellScrollView"])
-            {
-                UIScrollView *scroll = (UIScrollView *) obj;
-                
-                scroll.delaysContentTouches =NO;
-                break;
-                
-            }
-        }
-    }
 }
 
 //如果滑动tableView的时候,触碰区域正好在按钮上的话,是滑动不了的,通过这个方法解决

@@ -7,6 +7,7 @@
 #import "UIImage+LCExtension.h"
 #import "UINavigationController+Push.h"
 #import "UITableView+LCExtension.h"
+#import "UITableViewCell+LCExtension.h"
 #import "UIView+LCExtension.h"
 #import "UIViewController+LCExtension.h"
 #import "LCCommon.h"
