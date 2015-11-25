@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/CommonTools/LocalizationTool/LCLocalizationTool.h

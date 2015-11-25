@@ -12,6 +12,7 @@
 #import "UIViewController+LCExtension.h"
 #import "LCCommon.h"
 #import "LCCommonTools.h"
+#import "LCLocalizationTool.h"
 #import "LCLocationConverter.h"
 #import "Macro.h"
 #import "NSString+RegEx.h"
