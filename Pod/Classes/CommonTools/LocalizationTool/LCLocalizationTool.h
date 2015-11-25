@@ -1,6 +1,5 @@
 //
 //  LCLocalizationTool.h
-//  MochuiRouter
 //
 //  Created by linhua on 15/11/25.
 //  Copyright © 2015年 matrix. All rights reserved.
