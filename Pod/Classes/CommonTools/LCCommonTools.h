@@ -24,5 +24,6 @@
 #import "LCLocationConverter.h"
 #import "Macro.h"
 #import "NSString+RegEx.h"
+#import "LCLocalizationTool.h"
 
 #endif /* LCCommonTools_h */
