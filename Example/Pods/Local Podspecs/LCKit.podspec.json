@@ -28,6 +28,16 @@
       "name": "CommonTools",
       "source_files": "Pod/Classes/CommonTools/**/*",
       "public_header_files": "Pod/Classes/CommonTools/**/*.h"
+    },
+    {
+      "name": "NetworkEngine",
+      "source_files": "Pod/Classes/NetworkEngine/**/*",
+      "public_header_files": "Pod/Classes/NetworkEngine/**/*.h",
+      "dependencies": {
+        "AFNetworking": [
+          "~> 2.3"
+        ]
+      }
     }
   ]
 }

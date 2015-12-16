@@ -11,6 +11,12 @@
 #import "AFHTTPRequestOperationManager+AutoRetry.h"
 #import "NSDictionary_JSONExtensions.h"
 
+@interface LCNetworkEngine ()
+
+- (void)reloginUsingBlock:(SessionExpiredBlock )isExpired;
+
+@end
+
 @implementation LCNetworkEngine
 
 + (instancetype )sharedEngine {
@@ -174,7 +180,6 @@
     //登录超时
     if ((codeValue && [codeValue integerValue] == 4) || (codeValue && [codeValue integerValue] == 100015)){
         //如果本身是login请求，则将结果返回,否则断定为session超时
-    #warning URL setting
         if ([[operation.request.URL absoluteString] rangeOfString:@"loginurl"].location != NSNotFound){
             result(dic);
         }else{
@@ -208,7 +213,6 @@
            NSNumber *codeValue = [dict objectForKey:@"code"];
            if (codeValue && [codeValue integerValue] == 0){
                //登录成功
-               
                isExpired(YES,nil);
            }
            else{

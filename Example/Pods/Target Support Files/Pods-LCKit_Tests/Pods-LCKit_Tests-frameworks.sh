@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-LCKit_Tests/AFNetworking.framework"
   install_framework "Pods-LCKit_Tests/LCKit.framework"
   install_framework "Pods-LCKit_Tests/FBSnapshotTestCase.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-LCKit_Tests/AFNetworking.framework"
   install_framework "Pods-LCKit_Tests/LCKit.framework"
   install_framework "Pods-LCKit_Tests/FBSnapshotTestCase.framework"
 fi

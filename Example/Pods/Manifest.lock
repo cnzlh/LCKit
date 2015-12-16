@@ -1,4 +1,25 @@
 PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - FBSnapshotTestCase (2.0.7):
     - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
   - FBSnapshotTestCase/Core (2.0.7)
@@ -6,7 +27,10 @@ PODS:
     - FBSnapshotTestCase/Core
   - LCKit (1.0.4):
     - LCKit/CommonTools (= 1.0.4)
+    - LCKit/NetworkEngine (= 1.0.4)
   - LCKit/CommonTools (1.0.4)
+  - LCKit/NetworkEngine (1.0.4):
+    - AFNetworking (~> 2.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -17,7 +41,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
-  LCKit: 2bec7fdc8bd5952f530ee6b5247b3d19ad71ca73
+  LCKit: ddb02733e90a0f3c4c51e6e4fb7a4c4e0b295a94
 
 COCOAPODS: 0.39.0
