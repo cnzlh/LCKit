@@ -19,6 +19,7 @@
 #import "UITableViewCell+LCExtension.h"
 #import "UIView+LCExtension.h"
 #import "UIViewController+LCExtension.h"
+#import "UIAlertView+Blocks.h"
 
 #import "LCCommon.h"
 #import "LCLocationConverter.h"

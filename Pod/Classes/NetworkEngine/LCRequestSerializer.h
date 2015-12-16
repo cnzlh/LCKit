@@ -8,7 +8,7 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-@interface LCRequestSerializer : AFHTTPRequestSerializer
+@interface LCRequestSerializer : AFJSONRequestSerializer
 
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method URLString:(NSString *)URLString parameters:(id)parameters error:(NSError *__autoreleasing *)error;
 
