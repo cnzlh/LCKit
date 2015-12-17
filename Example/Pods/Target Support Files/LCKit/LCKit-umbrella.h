@@ -2,6 +2,7 @@
 
 #import "NSDate+LCExtension.h"
 #import "NSString+LCExtension.h"
+#import "UIAlertView+Blocks.h"
 #import "UIButton+Blocks.h"
 #import "UIColor+LCExtension.h"
 #import "UIImage+LCExtension.h"
