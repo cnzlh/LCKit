@@ -19,7 +19,49 @@
     [super viewDidLoad];
     
     self.tableView.delaysContentTouches = NO;
-}
+    
+    NSString *url1 = @"http://china.huanqiu.com/article/2015-12/8268412.html?from=bdwz";
+    
+    NSString *url2 = @"http://baijia.baidu.com/?tn=topic&topicid=x68ce1OS";
+    
+    NSString *url3 = @"http://www.cankaoxiaoxi.com/roll/roll10/2015/1227/1038511.shtml";
+    
+    LCNetworkEngine *engine = [LCNetworkEngine sharedEngine];
+    AFHTTPRequestOperation *operation1 =
+    [engine requestWithMethod:HttpMethodGet
+                                            URLString:url1
+                                           parameters:nil
+                                         successBlock:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                             NSLog(@"url1 : %@",responseObject);
+                                         } failedBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                             NSLog(@"%@",[error localizedDescription]);
+                                         } autoRetry:1];
+    
+    AFHTTPRequestOperation *operation2 =
+    [engine requestWithMethod:HttpMethodGet
+                                            URLString:url2
+                                           parameters:nil
+                                         successBlock:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                             NSLog(@"url2 : %@",responseObject);
+                                         } failedBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                             NSLog(@"%@",[error localizedDescription]);
+                                         } autoRetry:1];
+    
+    AFHTTPRequestOperation *operation3 =
+    [engine requestWithMethod:HttpMethodGet
+                                            URLString:url3
+                                           parameters:nil
+                                         successBlock:^(AFHTTPRequestOperation *operation, id responseObject) {
+                                             NSLog(@"url3 : %@",responseObject);
+                                         } failedBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
+                                             NSLog(@"%@",[error localizedDescription]);
+                                         } autoRetry:1];
+    
+    [engine.operationQueue addOperations:@[operation1,operation2,operation3] waitUntilFinished:NO];
+    [engine.operationQueue setCompletion:^{
+        // handle operation queue's completion here (launched in main thread!)
+        NSLog(@"completed");
+    }];}
 
 - (void)didReceiveMemoryWarning
 {

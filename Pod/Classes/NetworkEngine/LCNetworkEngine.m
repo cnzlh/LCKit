@@ -106,7 +106,7 @@
                                   }
                               autoRetryOf:timesToRetry
                             retryInterval:1];
-    [self.operationQueue addOperation:operation];
+//    [self.operationQueue addOperation:operation];
     return operation;
 
 }
@@ -161,7 +161,7 @@
                                   }
                               autoRetryOf:timesToRetry
                             retryInterval:0 ];
-    [self.operationQueue addOperation:operation];
+//    [self.operationQueue addOperation:operation];
     return operation;
 }
 

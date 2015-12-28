@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "AFHTTPRequestOperationManager.h"
+#import "NSOperationQueue+Completion.h"
 
 typedef void (^HTTPRequestSuccessBlock)(AFHTTPRequestOperation *operation,id responseObject);
 typedef void (^HTTPRequestFailedBlock)(AFHTTPRequestOperation *operation, NSError *error);
 typedef void (^SessionExpiredBlock)(BOOL isExpired, id errorInfo);
 typedef void (^HandlerResultBlock)(id result);
+
 
 typedef NS_ENUM(NSInteger, HttpMethod) {
     HttpMethodGet,
@@ -40,6 +42,8 @@ typedef NS_ENUM(NSInteger, HttpMethod) {
                                  successBlock:(HTTPRequestSuccessBlock)success
                                   failedBlock:(HTTPRequestFailedBlock)failed
                                     autoRetry:(int)timesToRetry;
+
+
 
 - (void)cancelOperation:(AFHTTPRequestOperation *)operation;
 

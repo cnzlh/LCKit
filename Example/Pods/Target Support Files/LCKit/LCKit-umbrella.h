@@ -22,6 +22,7 @@
 #import "AFHTTPSessionManager+AutoRetry.h"
 #import "LCNetworkEngine.h"
 #import "LCRequestSerializer.h"
+#import "NSOperationQueue+Completion.h"
 #import "CJSONDeserializer.h"
 #import "CJSONSerializer.h"
 #import "JSONRepresentation.h"
