@@ -276,6 +276,32 @@
     return ([self isEarlierThanDate:[NSDate date]]);
 }
 
++ (NSString *)timeDifferenceInSeconds:(NSInteger)seconds {
+    if(seconds < 0){
+        NSAssert(seconds >= 0, @"秒数必须大于等于0");
+        return @"秒数必须大于等于0";
+    }
+    
+    NSInteger day = seconds / D_DAY;
+    
+    NSInteger hour = seconds % D_DAY / D_HOUR ;
+    
+    NSInteger minute = seconds % D_DAY % D_HOUR /  D_MINUTE;
+    
+    NSInteger second = seconds % D_DAY % D_HOUR %  D_MINUTE;
+    
+    if(seconds < D_MINUTE){
+        return [NSString stringWithFormat:@"%lu秒",seconds];
+        
+    }else if(seconds >= D_MINUTE && seconds < D_HOUR){
+        return [NSString stringWithFormat:@"%lu分%lu秒",minute,second];
+        
+    }else if (seconds >= D_HOUR && seconds < D_DAY){
+        return [NSString stringWithFormat:@"%lu时%lu分%lu秒",hour,minute,second];
+    }else{
+        return [NSString stringWithFormat:@"%lu天%lu时%lu分%lu秒",day,hour,minute,second];
+    }
+}
 
 #pragma mark Roles
 - (BOOL) isTypicallyWeekend

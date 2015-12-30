@@ -118,6 +118,7 @@
 - (BOOL) isLaterThanDate: (NSDate *) aDate;
 - (BOOL) isInFuture;
 - (BOOL) isInPast;
++ (NSString *)timeDifferenceInSeconds:(NSInteger)seconds; //将秒数转成时间差（xx天xx小时xx分xx秒）
 
 // Date roles
 - (BOOL) isTypicallyWorkday;
