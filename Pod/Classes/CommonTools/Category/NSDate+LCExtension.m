@@ -291,15 +291,15 @@
     NSInteger second = seconds % D_DAY % D_HOUR %  D_MINUTE;
     
     if(seconds < D_MINUTE){
-        return [NSString stringWithFormat:@"%lu秒",seconds];
+        return [NSString stringWithFormat:@"%@秒",@(seconds)];
         
     }else if(seconds >= D_MINUTE && seconds < D_HOUR){
-        return [NSString stringWithFormat:@"%lu分%lu秒",minute,second];
+        return [NSString stringWithFormat:@"%@分%@秒",@(minute),@(second)];
         
     }else if (seconds >= D_HOUR && seconds < D_DAY){
-        return [NSString stringWithFormat:@"%lu时%lu分%lu秒",hour,minute,second];
+        return [NSString stringWithFormat:@"%@时%@分%@秒",@(hour),@(minute),@(second)];
     }else{
-        return [NSString stringWithFormat:@"%lu天%lu时%lu分%lu秒",day,hour,minute,second];
+        return [NSString stringWithFormat:@"%@天%@时%@分%@秒",@(day),@(hour),@(minute),@(second)];
     }
 }
 
