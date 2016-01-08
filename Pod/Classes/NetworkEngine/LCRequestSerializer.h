@@ -10,6 +10,8 @@
 
 @interface LCRequestSerializer : AFJSONRequestSerializer
 
+@property (assign, nonatomic) NSInteger timeoutSeconds;
+
 - (NSMutableURLRequest *)requestWithMethod:(NSString *)method URLString:(NSString *)URLString parameters:(id)parameters error:(NSError *__autoreleasing *)error;
 
 

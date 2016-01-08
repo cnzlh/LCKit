@@ -11,6 +11,8 @@
 #import "AFHTTPRequestOperationManager+AutoRetry.h"
 #import "NSDictionary_JSONExtensions.h"
 
+
+
 @interface LCNetworkEngine ()
 
 - (void)reloginUsingBlock:(SessionExpiredBlock )isExpired;
@@ -53,6 +55,16 @@
     [self.operationQueue cancelAllOperations];
 }
 
+- (void)setTimeoutSeconds:(NSInteger)timeoutSeconds {
+    _timeoutSeconds = timeoutSeconds;
+    
+    if (timeoutSeconds > 0) {
+        for (AFHTTPRequestOperation *op in self.operationQueue.operations) {
+            [(NSMutableURLRequest *)op.request setTimeoutInterval:timeoutSeconds];
+        }
+    }
+}
+
 - (AFHTTPRequestOperation *)requestWithMethod:(HttpMethod )method
                                     URLString:(NSString *)URLString
                                    parameters:(NSDictionary *)parameters
@@ -65,6 +77,9 @@
                                                        URLString:URLString
                                                       parameters:parameters
                                                            error:nil];
+    if (self.timeoutSeconds) {
+        request.timeoutInterval = self.timeoutSeconds;
+    }
     
     NSLog(@"%@ %@",request.URL,parameters);
     AFHTTPRequestOperation *operation =
@@ -127,6 +142,9 @@
                                                     constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
                                                         block(formData);
                                                     } error:nil];
+    if (self.timeoutSeconds) {
+        request.timeoutInterval = self.timeoutSeconds;
+    }
     
     NSLog(@"%@ %@",request.URL,parameters);
     

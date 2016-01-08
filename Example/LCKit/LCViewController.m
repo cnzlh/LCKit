@@ -36,6 +36,7 @@
                                          } failedBlock:^(AFHTTPRequestOperation *operation, NSError *error) {
                                              NSLog(@"%@",[error localizedDescription]);
                                          } autoRetry:1];
+    ((NSMutableURLRequest *)operation1.request).timeoutInterval = 20;
     
     AFHTTPRequestOperation *operation2 =
     [engine requestWithMethod:HttpMethodGet

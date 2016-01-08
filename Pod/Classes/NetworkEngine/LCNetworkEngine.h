@@ -21,11 +21,16 @@ typedef NS_ENUM(NSInteger, HttpMethod) {
     HttpMethodPost
 };
 
-#define TimeOutSeconds      30
 
 @interface LCNetworkEngine : AFHTTPRequestOperationManager
 
 + (instancetype )sharedEngine;
+
+/**
+ *  设置超时时间
+ */
+@property (assign, nonatomic) NSInteger timeoutSeconds;
+
 
 - (AFHTTPRequestOperation *)requestWithMethod:(HttpMethod )method
                                     URLString:(NSString *)URLString
