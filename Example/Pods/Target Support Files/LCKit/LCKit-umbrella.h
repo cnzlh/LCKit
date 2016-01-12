@@ -4,6 +4,7 @@
 #import "NSString+LCExtension.h"
 #import "UIAlertView+Blocks.h"
 #import "UIButton+Blocks.h"
+#import "UIButton+EdgeInsets.h"
 #import "UIColor+LCExtension.h"
 #import "UIImage+LCExtension.h"
 #import "UINavigationController+Push.h"
