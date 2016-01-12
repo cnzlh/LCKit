@@ -29,5 +29,8 @@
  */
 - (NSInteger)calculateStringLength;
 
-
+/**
+ *  计算string的size大小
+ */
+- (CGSize)lc_sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode;
 @end
