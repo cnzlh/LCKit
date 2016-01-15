@@ -15,4 +15,11 @@
  */
 - (void)resignKeyBoardInView:(UIView *)view;
 
+/**
+ *  当前ViewController是否正在显示
+ *
+ *  @return 是否正在显示，YES表示显示，NO表示未显示
+ */
+- (BOOL)isVisible;
+
 @end
