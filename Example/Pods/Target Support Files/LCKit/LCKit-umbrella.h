@@ -6,6 +6,7 @@
 #import "UIButton+Blocks.h"
 #import "UIButton+EdgeInsets.h"
 #import "UIColor+LCExtension.h"
+#import "UIDevice+LCExtension.h"
 #import "UIImage+LCExtension.h"
 #import "UINavigationController+Push.h"
 #import "UITableView+LCExtension.h"

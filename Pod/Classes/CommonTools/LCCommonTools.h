@@ -21,6 +21,7 @@
 #import "UIView+LCExtension.h"
 #import "UIViewController+LCExtension.h"
 #import "UIAlertView+Blocks.h"
+#import "UIDevice+LCExtension.h"
 
 #import "LCCommon.h"
 #import "LCLocationConverter.h"
