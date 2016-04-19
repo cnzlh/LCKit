@@ -17,7 +17,6 @@
  */
 - (NSString *)stringByDeleteWhiteSpace;
 
-
 /**
  *	@brief	判断中英文混合的字符长度 中文字符作为2个长度
  *
@@ -33,4 +32,7 @@
  *  计算string的size大小
  */
 - (CGSize)lc_sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size lineBreakMode:(NSLineBreakMode)lineBreakMode;
+
+
+
 @end

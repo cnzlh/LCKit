@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreFoundation/CoreFoundation.h>
 
 @interface LCCommon : NSObject
 
@@ -18,5 +19,11 @@
  *	@return	随机整数
  */
 + (NSInteger)getRandomValue:(NSInteger)maxValue;
+
+// 汉字转拼音 如张三 返回zhangsan
++ (NSString *)hanziToPinYin:(NSString *)hanzi;
+
+// 获取汉字的首字母大写 如张三 返回Z
++ (NSString *)getFirstLetterWithName:(NSString *)name;
 
 @end
